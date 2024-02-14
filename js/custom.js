@@ -1,7 +1,16 @@
 $(function () {
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            $('.header').addClass("on");
+        } else {
+            $('.header').removeClass("on");
+        }
+    }
     $('.visual_wrap').slick({
         arrows: true,
-        fade: true,
+        // fade: true,
+        autoplay: true,
     });
 
     $('.header .xi-bars').on('click', function (e) {

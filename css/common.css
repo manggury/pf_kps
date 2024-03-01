@@ -10,14 +10,6 @@
     overflow: hidden;
 }
 
-/* .big_con {
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}  */
-
-
 .title {
     /* text-align: center; */
     margin: 0 0 40px 0;
@@ -36,4 +28,19 @@
     font-weight: 400;
     line-height: 20px;
     word-break: keep-all;
+}
+
+@media (max-width:375px) {
+    p br {
+        display: none;
+    }
+}
+
+:root {
+    --pc: #054498;
+    --sc: #286db7;
+    --wc: #ffffff;
+    --dc: #202123;
+    --bc: #f9f9f9;
+    --gc: #dddddd;
 }

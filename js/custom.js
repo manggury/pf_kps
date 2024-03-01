@@ -19,6 +19,15 @@ $(function () {
         fade: true,
         autoplay: true,
         pauseOnHover: false,
+
+        responsive: [
+            {
+                breakpoint: 376,
+                settings: {
+                    arrows: false,
+                },
+            },
+        ]
     });
 
 
